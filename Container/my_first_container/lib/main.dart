@@ -6,6 +6,31 @@ void main() {
 
 class MyFirstContainer extends StatelessWidget {
   const MyFirstContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            width: 200,
+            height: 100,
+            color: Colors.blue,
+            child: const Text(
+              "Step 3 Complete",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/*
+Step 2:
+class MyFirstContainer extends StatelessWidget {
+  const MyFirstContainer({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,6 +46,7 @@ class MyFirstContainer extends StatelessWidget {
     );
   }
 }
+*/
 
 
 
