@@ -12,7 +12,7 @@ class MyFirstContainer extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            height: 100,
+            height: 200,
             width: 150,
             child: const Text("Step 2 Complete"),
           ),
