@@ -1,9 +1,59 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyFirstContainer());
+  runApp(const AlignedContainerApp());
 }
 
+class AlignedContainerApp extends StatelessWidget {
+  const AlignedContainerApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            width: 250,
+            height: 250,
+            color: Colors.orange,
+            alignment: Alignment.topRight,
+            child: const Text("Top Right!"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+/*
+class RevisionOne extends StatelessWidget {
+  const RevisionOne({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            width: 150,
+            height: 150,
+            color: Colors.deepPurple,
+            margin: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: const Text(
+              "Review 1",
+              style: TextStyle(color: Colors.amber),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
+
+
+/*
 class MyFirstContainer extends StatelessWidget {
   const MyFirstContainer({super.key});
 
@@ -25,6 +75,7 @@ class MyFirstContainer extends StatelessWidget {
     );
   }
 }
+*/
 
 
 /*
