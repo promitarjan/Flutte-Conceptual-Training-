@@ -13,14 +13,12 @@ class MyFirstContainer extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            height: 100,
             width: 200,
+            height: 100,
             color: Colors.blue,
-            padding: EdgeInsets.only(left: 30.0, top: 20.0),
-            child: const Text(
-              "Step 4 Complete",
-              style: TextStyle(color: Colors.white),
-            ),
+            padding: const EdgeInsets.only(left: 30.0, top: 20.0),
+            margin: const EdgeInsets.all(15.0),
+            child: const Text("Step 5", style: TextStyle(color: Colors.white)),
           ),
         ),
       ),
@@ -28,7 +26,31 @@ class MyFirstContainer extends StatelessWidget {
   }
 }
 
+
 /*
+class MyFirstContainer extends StatelessWidget {
+  const MyFirstContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: 100,
+            width: 200,
+            color: Colors.blue,
+            padding: const EdgeInsets.only(left: 30.0, top: 20.0),
+            child: const Text("Step 4", style: TextStyle(color: Colors.white)),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
+/*
+Step 3: 
 class MyFirstContainer extends StatelessWidget {
   const MyFirstContainer({super.key});
 
