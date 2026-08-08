@@ -12,6 +12,56 @@ class DecoratedContainerApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
+            height: 200,
+            width: 200,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.cyan,
+              border: Border.all(width: 5.0, color: Colors.deepPurple),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: const Text("Step 8"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/*
+class DecoratedContainerApp extends StatelessWidget {
+  const DecoratedContainerApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.cyan,
+              border: Border.all(width: 5.0, color: Colors.deepPurple),
+            ),
+            child: const Text("Step 8"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
+
+/*
+class DecoratedContainerApp extends StatelessWidget {
+  const DecoratedContainerApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
             width: 200,
             height: 200,
             alignment: Alignment.center,
@@ -23,6 +73,7 @@ class DecoratedContainerApp extends StatelessWidget {
     );
   }
 }
+*/
 
 /*
 import 'package:flutter/material.dart';
