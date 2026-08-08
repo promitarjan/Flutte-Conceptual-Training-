@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AlignedContainerApp());
+  runApp(const DecoratedContainerApp());
 }
 
-class AlignedContainerApp extends StatelessWidget {
-  const AlignedContainerApp({super.key});
+class DecoratedContainerApp extends StatelessWidget {
+  const DecoratedContainerApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Container(
-            width: 250,
-            height: 250,
-            color: Colors.orange,
-            alignment: Alignment.topRight,
-            child: const Text("Top Right!"),
+            width: 200,
+            height: 200,
+            alignment: Alignment.center,
+            decoration: const BoxDecoration(color: Colors.cyan),
+            child: const Text("Step 7"),
           ),
         ),
       ),
@@ -24,7 +24,33 @@ class AlignedContainerApp extends StatelessWidget {
   }
 }
 
+/*
+import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const AlignedContainerApp());
+}
+
+class AlignedContainerApp extends StatelessWidget {
+  const AlignedContainerApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            width: 250,
+            height: 250,
+            color: Colors.orange,
+            alignment: Alignment.topRight,
+            child: const Text("Top Right!"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
 
 /*
 class RevisionOne extends StatelessWidget {
