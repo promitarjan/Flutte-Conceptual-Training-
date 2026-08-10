@@ -19,14 +19,48 @@ class DecoratedContainerApp extends StatelessWidget {
               color: Colors.cyan,
               border: Border.all(width: 5.0, color: Colors.deepPurple),
               borderRadius: BorderRadius.circular(20.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black45,
+                  blurRadius: 15.0,
+                  offset: Offset(10.0, 10.0),
+                ),
+              ],
             ),
-            child: const Text("Step 8"),
+            child: const Text("Step 10"),
           ),
         ),
       ),
     );
   }
 }
+
+
+/*
+class DecoratedContainerApp extends StatelessWidget {
+  const DecoratedContainerApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.cyan,
+              border: Border.all(width: 5.0, color: Colors.deepPurple),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: const Text("Step 9"),
+          ),
+        ),
+      ),
+    );
+  }
+}
+*/
 
 /*
 class DecoratedContainerApp extends StatelessWidget {
